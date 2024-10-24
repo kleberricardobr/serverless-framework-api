@@ -1,19 +1,19 @@
-#API Agendamento Médico 
+# API Agendamento Médico 
 
 - Os dados estão mockados (./src/mocks.mocks.ts)
 
-##Instruções para execução do projeto (ambiente local):
+## Instruções para execução do projeto (ambiente local):
  - npm run dev
 
-##Instruções para execução dos teste unitários:
+## Instruções para execução dos teste unitários:
  - npm run test
 
 
-##Rotas disponíveis:
+## Rotas disponíveis:
   -  GET  | http://localhost:3000/agendas  
   -  POST | http://localhost:3000/agendamento    
 
-##Exemplo de JSON válido para Post /agendamento:
+## Exemplo de JSON válido para Post /agendamento:
 
  {
   "medico_id": 1,
@@ -22,7 +22,7 @@
 }
 
 
-##Deploy AWS
+## Deploy AWS
 
 - Para deploy, executar o seguinte comando: npx serverless deploy --verbose
 - Após a execução, serão exibidos os endpoint criados 

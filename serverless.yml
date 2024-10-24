@@ -1,0 +1,24 @@
+app: serverless-teste
+service: serverless-teste
+frameworkVersion: '4'
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+
+functions:
+  agendas:
+    handler: src/agenda/controller/agendaHandler.handler
+    events:
+      - httpApi:
+          path: /agendas
+          method: get
+  agendamento:
+    handler: src/agendamento/controller/agendamentoHandler.handler
+    events:
+      - httpApi:
+          path: /agendamento
+          method: post
+
+plugins:
+  - serverless-offline
